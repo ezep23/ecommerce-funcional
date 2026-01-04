@@ -1,0 +1,25 @@
+{
+  "name": "white-crown",
+  "version": "1.0.0",
+  "description": "Tienda online con fines prácticos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezep23/ecommerce-funcional.git"
+  },
+  "keywords": [
+    "e-commerce"
+  ],
+  "author": "ezep23",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ezep23/ecommerce-funcional/issues"
+  },
+  "homepage": "https://github.com/ezep23/ecommerce-funcional#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
