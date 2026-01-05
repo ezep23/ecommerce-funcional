@@ -3,8 +3,17 @@
   "version": "1.0.0",
   "description": "Tienda online con fines prácticos",
   "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "client",
+    "backend"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"npm run db:up\" \"npm run dev:backend\" \"npm run dev:client\"",
+    "db:up": "docker-compose up",
+    "dev:backend": "npm run dev -w backend",
+    "dev:client": "npm run dev -w client",
+    "install:all": "npm install"
   },
   "repository": {
     "type": "git",
